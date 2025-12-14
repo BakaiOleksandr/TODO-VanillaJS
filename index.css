@@ -1,20 +1,100 @@
+:root {
+  --i1: rgb(138, 187, 189);
+}
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Amaranth;
+}
+html {
+  margin: 0;
+  padding: 0;
+}
+body {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header {
+  font-size: 1.4rem;
+  font-weight: 700;
+  font-style: italic;
+  background-color: var(--i1);
+  padding: 0.5rem 0;
+  width: 100%;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.delete-all-btn {
+  background-color: rgb(198, 150, 150);
+}
+input {
+  font-size: 1.4rem;
+  text-align: center;
+  margin: 1rem 0;
+  padding: 0.2rem;
+  display: block;
+}
+button {
+  cursor: pointer;
+  margin: 0.5rem;
+  width: 40%;
+  padding: 0.5rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 1rem;
+}
+button:hover {
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.task-container {
+  margin-top: 1rem;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.task-text-container {
+  margin: 1rem 0;
+  padding: 0.5rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto 1fr auto auto;
+  align-items: center;
+  justify-items: center;
+  gap: 0.5rem;
+  border-radius: 1rem;
+  background-color: var(--i1);
+}
+.task-text-container:hover {
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
 .hidden {
   visibility: hidden;
 }
 .active {
   visibility: visible;
 }
-.task-text-container {
-  display: flex;
-  justify-content: center;
-  background-color: cadetblue;
-}
+
 .img {
   height: 2rem;
   width: auto;
-  color: blue;
+  filter: invert(100%) sepia(100%) saturate(500%) hue-rotate(345deg);
+}
+.task-text {
+  font-size: 2rem;
+  padding: 0;
+  margin: 0;
 }
 .delete {
-  background-color: lightcoral;
   cursor: pointer;
 }

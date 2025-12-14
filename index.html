@@ -3,12 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link rel="icon" type="image/x-icon" href="./images/favicon.png">    <title>Task App</title>
-  <link rel="stylesheet" href="./index.css">
-</head>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Task App</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
   <body>
-    <h1>ToDo app</h1>
-    <h2>Enter task</h2>
+    <div class="header">ToDo app</div>
     <div class="form-container">
       <form>
         <input
@@ -16,6 +22,7 @@
           autocomplete="off"
           type="text"
           placeholder="Enter the task"
+          maxlength="25rem"
         />
         <button class="sub-btn" type="submit">Submit</button>
         <button class="delete-all-btn hidden">Delete All</button>
