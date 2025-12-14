@@ -1,0 +1,20 @@
+.hidden {
+  visibility: hidden;
+}
+.active {
+  visibility: visible;
+}
+.task-text-container {
+  display: flex;
+  justify-content: center;
+  background-color: cadetblue;
+}
+.img {
+  height: 2rem;
+  width: auto;
+  color: blue;
+}
+.delete {
+  background-color: lightcoral;
+  cursor: pointer;
+}

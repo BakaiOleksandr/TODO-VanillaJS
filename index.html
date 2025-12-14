@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon" type="image/x-icon" href="./images/favicon.png">    <title>Task App</title>
+  <link rel="stylesheet" href="./index.css">
+</head>
+  <body>
+    <h1>ToDo app</h1>
+    <h2>Enter task</h2>
+    <div class="form-container">
+      <form>
+        <input
+          name="input"
+          autocomplete="off"
+          type="text"
+          placeholder="Enter the task"
+        />
+        <button class="sub-btn" type="submit">Submit</button>
+        <button class="delete-all-btn hidden">Delete All</button>
+      </form>
+    </div>
+    <div class="task-container"></div>
+    <script type="module" src="index.js"></script>
+  </body>
+</html>
