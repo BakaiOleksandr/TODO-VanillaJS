@@ -9,7 +9,7 @@ export function RenderTasks(task, taskContainer) {
   const textElement = document.createElement('p');
   textElement.classList.add('task-text');
   textElement.textContent = task.item;
-  C1(task)
+
   //images
   //create image List
   const imgList = document.createElement('img');

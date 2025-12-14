@@ -5,6 +5,7 @@ import {LoadTasks} from './components/LoadTasks.js';
 import {ShowElements} from './components/ShowElements.js';
 import {DeleteAllBTN} from './components/DeleteAllBTN.js';
 import {RenderTasks} from './components/RenderTasks.js';
+import {CheckLocalStg} from './components/CheckLocalStg.js';
 //localStorage Create
 //setLocalStorage
 
@@ -17,15 +18,10 @@ const delAllBTN = document.querySelector('.delete-all-btn');
 //LOAD TASKS
 LoadTasks(taskContainer);
 //check localstorage
-const CheckLocalStg = () => {
-  const localTasks = JSON.parse(localStorage.getItem('tasks') || '[]');
 
-  if (localTasks.length > 0) return true;
-};
 if (CheckLocalStg()) {
   ShowElements(delAllBTN);
   DeleteAllBTN(delAllBTN);
-  
 }
 
 //Submit
