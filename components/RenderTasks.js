@@ -14,11 +14,11 @@ export function RenderTasks(task, taskContainer) {
   //create image List
   const imgList = document.createElement('img');
   imgList.classList.add('img');
-  imgList.src = '../images/list.svg';
+  imgList.src = 'images/list.svg';
   //create delete img
   const deleteTaskIMG = document.createElement('img');
   deleteTaskIMG.classList.add('img', 'delete');
-  deleteTaskIMG.src = '../images/trash.svg';
+  deleteTaskIMG.src = 'images/trash.svg';
   //set place
   // taskElement.prepend(imgList);
   taskElement.append(imgList, textElement, deleteTaskIMG);
